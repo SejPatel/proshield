@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <calendar string="Scheduling" date_start="start" date_stop="stop" quick_add="False"
                           color="service_team">
-                    <field name="service_team"/>
+                    <field name="service_team" avatar_field="image_small"/>
                     <field name="partner_id" attrs="{'invisible':[('partner_id','=',False)]}"/>
                     <field name="area_id" attrs="{'invisible':[('area_id','=',False)]}"/>
                     <field name="state"/>
