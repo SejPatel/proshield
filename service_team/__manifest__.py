@@ -12,6 +12,7 @@
     'depends': ['base', 'web', 'hr', 'hr_expense', 'mail', 'calendar', 'account', 'fleet', 'base_geolocalize', 'purchase', 'stock', 'l10n_generic_coa', 'kg_required_fields'],
     'data': [
         'security/ir.model.access.csv',
+        'security/service_security.xml',
         'data/data.xml',
         'data/scheduled_action.xml',
         'data/mail_template_data.xml',
