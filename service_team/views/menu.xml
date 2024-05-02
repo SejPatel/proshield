@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--         Quotation  -->
+        <menuitem id="sub_menu_quotation" parent="main_menu_service_team" name="Quotations" sequence="4"/>
+        <menuitem id="menu_service_quotation" parent="sub_menu_quotation" action="action_service_quotation"
+                  sequence="1" name="Quotations Report"/>
+
+        <!--  Contract -->
+        <menuitem id="sub_menu_contracts" parent="main_menu_service_team" name="Contracts" sequence="6"/>
+        <menuitem id="menu_service_contract" parent="sub_menu_contracts" action="action_service_contract"
+                  sequence="1" name="Contracts Report"/>
+
+    </data>
+</odoo>
