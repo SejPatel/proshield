@@ -21,7 +21,7 @@
 
                 <!-- Logo -->
                 <div style="text-align: center">
-                    <img src="/service_team/static/src/img/logo.jpg" width="380"/>
+                    <img t-att-src="image_data_uri(doc.company_id.logo)" width="380"/>
                 </div>
 
                 <!-- Report Title -->
