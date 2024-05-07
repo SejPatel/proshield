@@ -23,7 +23,8 @@ class ServiceTeam(models.Model):
         help="Small-sized image of the product. It is automatically "
              "resized as a 64x64px image, with aspect ratio preserved. "
              "Use this field anywhere a small image is required.")
-
+    company_id = fields.Many2one('res.company', string='Company', required=True,
+        default=lambda self: self.env.company)
     name = fields.Char('Service Team', required=True, translate=True)
     user_id = fields.Many2one('hr.employee', string='Team Leader')
     driver_id = fields.Many2one('hr.employee', string='Team Driver')
