@@ -69,7 +69,7 @@ class Event(models.Model):
     product_id = fields.Many2one('product.product', string="Service Type")
     job_type_id = fields.Many2one('job.type', string="Job Type")
     mobile = fields.Char(string="Mobile", related='partner_id.mobile', store=True, readonly=False)
-    service_team = fields.Many2one('service.team', string="Team")
+    service_team = fields.Many2one('service.team', string="Team",domain="[('company_id','=',company_id)]")
     amount = fields.Float(string="Amount")
     remarks = fields.Text(string="Remarks", translate=True)
     followup_visit = fields.Boolean(string="Follow Up Visit")
