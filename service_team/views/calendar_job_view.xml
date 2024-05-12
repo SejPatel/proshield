@@ -241,7 +241,13 @@
                     <separator/>
                     <filter name="call_back" string="Callback Jobs" domain="[('call_back', '=', True)]"/>
                     <filter name="Amount" string="Amount > 0" domain="[('amount','&gt;','0')]"/>
-                    <filter name="team_a" string="Team A" domain="[('service_team.name', '=', 'Eisa Ahmed')]"/>
+                    <filter name="team_a" string="Team A" domain="[('service_team', '=', 'Team A')]"/>
+                    <filter name="team_b" string="Team B" domain="[('service_team', '=', 'Team B')]"/>
+                    <filter name="team_c" string="Team C" domain="[('service_team', '=', 'Team C')]"/>
+                    <filter name="team_d" string="Team D" domain="[('service_team', '=', 'Team D')]"/>
+                    <filter name="team_e" string="Team E" domain="[('service_team', '=', 'Team E')]"/>
+                    <filter name="team_o" string="Team O" domain="[('service_team', '=', 'Team O')]"/>
+                    <filter name="team_s" string="Team S" domain="[('service_team', '=', 'Team S')]"/>
                     <separator/>
                     <separator/>
                     <filter string="Yesterday" name="yesterday" separator="1"
