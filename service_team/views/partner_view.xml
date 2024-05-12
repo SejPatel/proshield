@@ -20,9 +20,9 @@
                 <field name="street" position="attributes">
                     <attribute name="required">True</attribute>
                 </field>
-                <field name="street2" position="attributes">
+<!--                 <field name="street2" position="attributes">
                     <attribute name="required">True</attribute>
-                </field>
+                </field> -->
                 <field name="city" position="attributes">
                     <attribute name="required">True</attribute>
                 </field>
