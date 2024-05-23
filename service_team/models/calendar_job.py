@@ -80,7 +80,7 @@ class Event(models.Model):
     job_recurring_days = fields.Selection([(str(x), str(x) + ' Days') for x in range(1, 8)],
                                           string="Recurring Job After", copy=False)
     recurring_job_created = fields.Boolean(string="Recurring Job Created")
-    job_card = fields.Char(string="Job Card#", size=5, copy=False)
+    job_card = fields.Char(string="Job Card#", size=6, copy=False)
     jcn_not_required = fields.Boolean(string="JCN Not Required")
     job_duration = fields.Float(string="Job Duration", compute='_get_job_duration', store=True)
     invoice_id = fields.Many2one('account.move', string="Invoice", )
@@ -489,7 +489,7 @@ class Event(models.Model):
             invoice_line_vals['tax_ids'] = [(6, 0, tax_ids)]
             invoice_line_vals['account_id'] = credit_account_id
             invoice_line_vals['price_unit'] = self.amount
-            invoice_line_vals['name'] = nameinvoice_line_vals['name'] = name
+            invoice_line_vals['name'] = invoice_line_vals['name'] = name
             invoice_line_vals['company_id'] = self.company_id.id
         else:
             name = 'No Product/Description'
